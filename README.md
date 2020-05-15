@@ -193,7 +193,7 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:tinytelly/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
