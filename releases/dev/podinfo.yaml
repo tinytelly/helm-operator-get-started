@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: tinytelly/podinfo
-      tag: dev-3sjmoi2k
+      tag: dev-btrnov28
     replicaCount: 1
     hpa:
       enabled: false
