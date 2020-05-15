@@ -217,7 +217,7 @@ With the `fluxcd.io/automated` annotations I instruct Flux to automate this rele
 When a new tag with the prefix `dev` is pushed to Docker Hub, Flux will update the image field in the yaml file,
 will commit and push the change to Git and finally will apply the change on the cluster.
 
-![gitops-automation](https://github.com/tinytelly/openfaas-flux/blob/master/docs/screens/flux-helm-image-update.png)
+![gitops-automation](https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-image-update.png)
 
 When the `podinfo-dev` HelmRelease object changes inside the cluster,
 Kubernetes API will notify the Flux Helm Operator and the operator will perform a Helm release upgrade.
@@ -233,7 +233,7 @@ REVISION	STATUS    	CHART        	DESCRIPTION
 The Flux Helm Operator reacts to changes in the HelmRelease collection but will also detect changes in the charts source files.
 If I make a change to the podinfo chart, the operator will pick that up and run an upgrade.
 
-![gitops-chart-change](https://github.com/tinytelly/openfaas-flux/blob/master/docs/screens/flux-helm-chart-update.png)
+![gitops-chart-change](https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-chart-update.png)
 
 ```
 $ helm -n dev history podinfo-dev
@@ -344,7 +344,7 @@ $ cd hack && ./ci-mock.sh -r tinytelly/podinfo -v 0.4.11
 Successfully tagged tinytelly/podinfo:0.4.11
 ```
 
-![gitops-semver](https://github.com/tinytelly/openfaas-flux/blob/master/docs/screens/flux-helm-semver.png)
+![gitops-semver](https://github.com/stefanprodan/openfaas-flux/blob/master/docs/screens/flux-helm-semver.png)
 
 ### Managing Kubernetes secrets
 
